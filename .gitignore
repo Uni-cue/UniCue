@@ -1,0 +1,62 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+build/
+dist/
+*.egg-info/
+.eggs/
+.venv/
+venv/
+env/
+.env
+.ipynb_checkpoints/
+
+# --- checkpoints / pretrained models / logs ---
+experiments/
+outputs/
+checkpoints/
+pretrained_models/
+pretrained/
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+*.wav
+*.mp4
+*.flv
+*.mkv
+*.webm
+*.npz
+*.npy
+*.csv
+!data/example/
+!data/example/**
+
+# --- vendored third-party (install via pip instead) ---
+gpuRIR/
+
+# --- experiment tracking / logs ---
+wandb/
+lightning_logs/
+*.log
+logs/
+
+# --- paper manuscript / scratch ---
+mfp3873.pdf
+*.pdf
+
+# --- editors / OS ---
+.vscode/
+.idea/
+.vs/
+.DS_Store
+Thumbs.db
+
+# --- tmp ---
+*.tmp
+*.tmp.wav
+tmp/
+.cache/

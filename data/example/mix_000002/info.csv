@@ -1,0 +1,10 @@
+Speaker,ID,Utterance,Gender,Text,Emotion,Language,Pre,Sector
+Speaker 1,BV1we411v7Uf,segment_0082.wav,male,他也感觉太哭了 他可能也不知道我为什么哭了 所以他也哭了,angry,Chinese,segment_0006.wav,5
+Speaker 2,BV1RDpzeDEiK,segment_0043.wav,male,"To start solving this problem, we need to require basic user testing in courts and revive.",angry,English,segment_0015.wav,3
+Length (seconds),4.854
+Relative dB (Speaker 2),+3.82
+Seed,42018478
+MixturePeakBeforeNorm,1.492744
+RIRFlag,0
+MixGain,10.000
+PeakNorm,1

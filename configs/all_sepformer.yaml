@@ -1,0 +1,27 @@
+# Training configuration for UniCueNet.
+seed: 42
+batch_size: 1
+optimizer: Adam
+optimizer_args:
+    lr: 0.00015
+    amsgrad: True
+epochs: 40
+epoch_length: 20000
+eval_num: 5000
+
+# Directory where checkpoints and logs are written.
+outputpath: ./experiments
+
+model: uniCueNet
+
+# Root directory containing `multi_mixtures/`, `audio_clean/` and `av_embedding/`.
+train_scp: /path/to/your/filtered_output_all
+eval_scp: /path/to/your/filtered_output_all
+
+loss: SI_SNR
+n_saved: 1
+num_workers: 1
+validate_every: 1
+with_amp: True            # mixed-precision training (AMP)
+nproc_per_node: 1
+cue: unicue
