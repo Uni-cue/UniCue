@@ -44,13 +44,13 @@ python train.py run --config configs/all_sepformer.yaml
 
 **Code.** This code builds on [SpeechBrain](https://github.com/speechbrain/speechbrain), [LAION-CLAP](https://github.com/LAION-AI/CLAP), [gpuRIR](https://github.com/DavidDiazGuerra/gpuRIR), and [yutto](https://github.com/yutto-dev/yutto). We thank their maintainers and contributors.
 
-## License
+## 📜License
 
 The paper is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Code released for research purposes.
 
 > **Disclaimer:** This repository is for research purposes only. Users are responsible for complying with the video platform's Terms of Service and applicable local laws; downloaded videos must not be redistributed.
 
-📖 Citation
+## 📖Citation
 If you find our work useful, please consider citing our paper:
 
 ```bibtex
