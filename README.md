@@ -6,7 +6,7 @@ Official code for *UniCue: A Unified Benchmark for Multi-Cue Target Speaker Extr
 
 UniCue is a unified benchmark for multi-cue target speaker extraction (TSE), with cues from four modalities — **video**, **pre-enrollment speech**, **text**, and **spatial**. It instantiates **UniCueNet**, a shared conditioning interface on a SepFormer-style separator that projects heterogeneous cues into a common latent space and organizes them into a unified cue memory.
 
-## Installation
+## 🛠️Installation
 
 1. Clone the repository:
 
@@ -21,13 +21,13 @@ cd UniCue
 pip install -r requirements.txt
 ```
 
-## Data preparation
+## 📚Data preparation
 
 UniCue is a speech-in-video benchmark: two-speaker mixtures are simulated with 4-channel RIRs (gpuRIR) and paired with four cue modalities — visual (face/body), self-enrollment speech, text (transcript, emotion, gender, language), and spatial (azimuth, distance) — with speaker-disjoint train/val/test splits. A small example mixture is provided in `data/example/`.
 
 See [data/README.md](data/README.md) for the full construction pipeline.
 
-## Training
+## 🚀Training
 
 1. Set `train_scp` / `eval_scp` in `configs/all_sepformer.yaml` to your data root.
 2. Run:
@@ -38,7 +38,7 @@ python train.py run --config configs/all_sepformer.yaml
 
 
 
-## Acknowledgements
+## 🙏Acknowledgements
 
 **Paper.** This work was supported by the National Natural Science Foundation of China under Grant No. 62306029, the Beijing Natural Science Foundation under Grant No. L233032, the Young Elite Scientists Sponsorship Program of the Beijing High Innovation Plan and the Shenzhen Loop Area Institute under Grant No. FPF10120250012.
 
@@ -49,3 +49,17 @@ python train.py run --config configs/all_sepformer.yaml
 The paper is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Code released for research purposes.
 
 > **Disclaimer:** This repository is for research purposes only. Users are responsible for complying with the video platform's Terms of Service and applicable local laws; downloaded videos must not be redistributed.
+
+📖 Citation
+If you find our work useful, please consider citing our paper:
+
+```bibtex
+@inproceedings{qian2026unicue,
+  title     = {UniCue: A Unified Benchmark for Multi-Cue Target Speaker Extraction with a Shared Conditioning Interface},
+  author    = {Xinyuan Qian and Mingyu Pang and Fuqiang Luo and Zexu Pan and Xu-Cheng Yin},
+  booktitle = {Proceedings of the 34th ACM International Conference on Multimedia},
+  year      = {2026},
+  doi       = {10.1145/3767308.3835611},
+  url       = {https://doi.org/10.1145/3767308.3835611}
+}
+```
